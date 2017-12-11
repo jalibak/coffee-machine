@@ -36,7 +36,6 @@ public class CoffeeMachine {
 
             int calculatedSize = water-size < 0 ? water : size;
 
-            milk = milk-size < 0 ? 0: milk-size;
             water = water-size < 0 ? 0: water-size;
 
             coffee = new Coffee(choice, calculatedSize);
