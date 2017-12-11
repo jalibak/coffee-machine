@@ -14,8 +14,19 @@ Run the command mvn test.
 ## Api
 
 /isWorking: check if the coffee machine is working.
+
 /status: check milk and water levels.
+
 /getChoices: get the available coffee choices.
+
 /brewCoffee: Returns a hot cup of coffee, takes two parameters, choice and size, returns an error if not able to brew cup.
+
 /refillWater: fill water.
+
 /refillMilk: fill milk.
+
+## Docker
+
+To build a docker image, run the command mvn install dockerfile:build
+
+Then run the docker image with the command docker run -p 8080:8080 -t coffee-machine
